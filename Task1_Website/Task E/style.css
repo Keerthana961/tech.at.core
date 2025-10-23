@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3fff3;
+  color: #053b24;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #059669, #10b981);
+  padding: 20px 50px;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* Hero Section */
+#hero {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(5, 94, 49, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #10b981;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #34d399;
+  box-shadow: 0 0 15px rgba(52, 211, 153, 0.7);
+}
+
+/* About Section */
+#about {
+  padding: 60px 50px;
+  background-color: #ecfdf5;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2em;
+  color: #047857;
+  margin-bottom: 15px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  color: #065f46;
+  font-size: 1.05em;
+}
+
+/* Services */
+#services {
+  padding: 70px 50px;
+  text-align: center;
+  background: #ffffff;
+}
+
+#services h2 {
+  color: #065f46;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: inline-block;
+  width: 28%;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #e6fffa;
+  box-shadow: 0 4px 12px rgba(0, 128, 64, 0.15);
+  transition: 0.3s;
+  vertical-align: top;
+}
+
+.service:hover {
+  background: #d1fae5;
+  transform: translateY(-8px);
+}
+
+.service h3 {
+  color: #047857;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #047857, #059669);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
