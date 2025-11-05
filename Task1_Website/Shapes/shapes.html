@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes Demo</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      gap: 50px; /* space between shapes */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db; /* Blue */
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #e74c3c; /* Red */
+      border-radius: 50%;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #2ecc71; /* Green */
+    }
+
+    h1 {
+      text-align: center;
+      color: #111;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Shapes Demo</h1>
+  <div class="square"></div>
+  <div class="circle"></div>
+  <div class="triangle"></div>
+
+</body>
+</html>
